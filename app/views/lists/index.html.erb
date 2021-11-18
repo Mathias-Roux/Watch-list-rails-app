@@ -1,0 +1,12 @@
+<h1>Movie Lists Maker</h1>
+
+<ul>
+  <% @lists.each do |list| %>
+    <li>
+      <%= link_to list do %>
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)"> <%= list.name %> </div>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
+<%= link_to '+ Create a new list', new_list_path %>

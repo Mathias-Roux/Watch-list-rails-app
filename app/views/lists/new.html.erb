@@ -1,0 +1,7 @@
+<h1>List creator</h1>
+<%= form_for @list do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.submit %>
+<% end %>
+<%= link_to 'back', lists_path %>
